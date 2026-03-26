@@ -18,7 +18,7 @@ def main():
     for i in range(n): # заполнение списка с клавиатуры
         print("a[",i,"] = ", end="")
         a[i] = float(input()) # чтение с клавиатуры
-    print("Результат = ",summ(n,a)) # вывод результата
+    print("Результат = ",summ(a)) # вывод результата
 
 if __name__ == "__main__":
     main()
