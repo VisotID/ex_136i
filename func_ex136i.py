@@ -1,14 +1,5 @@
 __author__ = "Высоцкая И.Д."
-'Модуль с функциями, факториал оптимизировать'
-
-def fact(prev, n):
-    """
-    Функция, вычисляющая факториал
-    prev — предыдущий факториал ((n-1)!), n — текущее число
-    Возвращает целое число
-    """
-    return prev * n
-
+'Модуль с функциями'
 
 def summ(arr):
     """
@@ -24,7 +15,7 @@ def summ(arr):
 
     for i in range(len(arr)):
         if i > 0:
-            prev_fact = fact(prev_fact, i)
+            prev_fact = prev_fact*i
 
         total += arr[i] / prev_fact # добавляем следующий член суммы: a[i] / i!
     return total
